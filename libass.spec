@@ -1,6 +1,6 @@
 
 %define name	libass
-%define version	0.9.9
+%define version	0.9.11
 %define rel	1
 
 %define major	4
