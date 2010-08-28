@@ -1,7 +1,6 @@
 
 %define name	libass
 %define version	0.9.11
-%define rel	1
 
 %define major	4
 %define libname	%mklibname ass %major
@@ -10,11 +9,11 @@
 Summary:	Library for SSA/ASS subtitles rendering
 Name:		%name
 Version:	%version
-Release:	%mkrel %rel
+Release:	%mkrel 2
 License:	GPLv2+
 Group:		System/Libraries
-URL:		http://libass.sourceforge.net/
-Source:		http://sourceforge.net/projects/libass/files/libass/libass-%version.tar.bz2
+URL:		http://code.google.com/p/libass/
+Source:		http://libass.googlecode.com/files/%name-%version.tar.bz2
 BuildRoot:	%{_tmppath}/%{name}-root
 BuildRequires:	enca-devel
 BuildRequires:	fontconfig-devel
