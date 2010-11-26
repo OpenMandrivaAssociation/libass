@@ -9,7 +9,7 @@
 Summary:	Library for SSA/ASS subtitles rendering
 Name:		%name
 Version:	%version
-Release:	%mkrel 2
+Release:	%mkrel 3
 License:	GPLv2+
 Group:		System/Libraries
 URL:		http://code.google.com/p/libass/
