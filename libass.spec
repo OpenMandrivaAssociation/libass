@@ -9,7 +9,7 @@
 Summary:	Library for SSA/ASS subtitles rendering
 Name:		%name
 Version:	%version
-Release:	%mkrel 4
+Release:	%mkrel 5
 License:	GPLv2+
 Group:		System/Libraries
 URL:		http://code.google.com/p/libass/
@@ -52,6 +52,10 @@ will use libass.
 %install
 rm -rf %{buildroot}
 %makeinstall_std
+
+%if "%{_lib}" == "lib64"
+perl -pi -e "s|-L/usr/lib\b|-L%{_libdir}|g" %{buildroot}%{_libdir}/*.la
+%endif
 
 %clean
 rm -rf %{buildroot}
