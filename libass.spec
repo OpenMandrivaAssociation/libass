@@ -1,6 +1,6 @@
 
 %define name	libass
-%define version	0.9.11
+%define version	0.10.0
 
 %define major	4
 %define libname	%mklibname ass %major
@@ -9,11 +9,11 @@
 Summary:	Library for SSA/ASS subtitles rendering
 Name:		%name
 Version:	%version
-Release:	%mkrel 5
+Release:	%mkrel 1
 License:	GPLv2+
 Group:		System/Libraries
 URL:		http://code.google.com/p/libass/
-Source:		http://libass.googlecode.com/files/%name-%version.tar.bz2
+Source:		http://libass.googlecode.com/files/%name-%version.tar.xz
 BuildRoot:	%{_tmppath}/%{name}-root
 BuildRequires:	enca-devel
 BuildRequires:	fontconfig-devel
@@ -53,10 +53,6 @@ will use libass.
 rm -rf %{buildroot}
 %makeinstall_std
 
-%if "%{_lib}" == "lib64"
-perl -pi -e "s|-L/usr/lib\b|-L%{_libdir}|g" %{buildroot}%{_libdir}/*.la
-%endif
-
 %clean
 rm -rf %{buildroot}
 
@@ -66,7 +62,6 @@ rm -rf %{buildroot}
 %files -n %devname
 %doc Changelog
 %{_libdir}/libass.a
-%{_libdir}/libass.la
 %{_libdir}/libass.so
 %{_includedir}/ass
 %{_libdir}/pkgconfig/%{name}.pc
