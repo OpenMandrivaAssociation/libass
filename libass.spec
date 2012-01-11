@@ -18,6 +18,7 @@ BuildRoot:	%{_tmppath}/%{name}-root
 BuildRequires:	enca-devel
 BuildRequires:	fontconfig-devel
 BuildRequires:	freetype2-devel
+BuildRequires:	fribidi-devel
 
 %description
 Libass is a portable library for SSA/ASS subtitles rendering.
