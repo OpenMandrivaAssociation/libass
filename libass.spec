@@ -1,11 +1,11 @@
-%define major 4
+%define major 5
 %define libname %mklibname ass %{major}
 %define devname %mklibname ass -d
 
 Summary:	Library for SSA/ASS subtitles rendering
 Name:		libass
 Version:	0.11.2
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		System/Libraries
 Url:		http://code.google.com/p/libass/
