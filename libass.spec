@@ -44,6 +44,7 @@ will use libass.
 %setup -q
 
 %build
+sh autogen.sh
 %configure --disable-static
 %make
 
