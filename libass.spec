@@ -5,7 +5,7 @@
 Summary:	Library for SSA/ASS subtitles rendering
 Name:		libass
 Version:	0.12.1
-Release:	4
+Release:	5
 License:	GPLv2+
 Group:		System/Libraries
 Url:		http://code.google.com/p/libass/
