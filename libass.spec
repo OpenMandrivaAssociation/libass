@@ -1,15 +1,15 @@
-%define major 5
+%define major 9
 %define libname %mklibname ass %{major}
 %define devname %mklibname ass -d
 
 Summary:	Library for SSA/ASS subtitles rendering
 Name:		libass
-Version:	0.12.1
-Release:	6
+Version:	0.14.0
+Release:	1
 License:	GPLv2+
 Group:		System/Libraries
-Url:		http://code.google.com/p/libass/
-Source0:	http://libass.googlecode.com/files/%{name}-%{version}.tar.xz
+Url:		https://github.com/libass/libass
+Source0:	https://github.com/libass/libass/archive/%{version}.tar.gz
 BuildRequires:	pkgconfig(enca)
 BuildRequires:	pkgconfig(fontconfig)
 BuildRequires:	pkgconfig(freetype2)
@@ -39,9 +39,10 @@ will use libass.
 
 %prep
 %setup -q
+./autogen.sh
 
 %build
-%configure --disable-static
+%configure
 %make
 
 %install
