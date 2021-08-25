@@ -9,7 +9,7 @@ Release:	1
 License:	GPLv2+
 Group:		System/Libraries
 Url:		https://github.com/libass/libass
-Source0:	https://github.com/libass/libass/archive/%{version}.tar.gz
+Source0:	https://github.com/libass/libass/archive/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	pkgconfig(enca)
 BuildRequires:	pkgconfig(fontconfig)
 BuildRequires:	pkgconfig(freetype2)
