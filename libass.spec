@@ -17,7 +17,6 @@ BuildRequires:	pkgconfig(fontconfig)
 BuildRequires:	pkgconfig(freetype2)
 BuildRequires:	pkgconfig(fribidi)
 BuildRequires:  pkgconfig(libunibreak)
-BuildRequires:  pkgconfig(directfb)
 
 %description
 Libass is a portable library for SSA/ASS subtitles rendering.
@@ -46,7 +45,7 @@ will use libass.
 
 %build
 %meson \
-        -Ddirectwrite=OFF
+        -Ddirectwrite=disabled
 %meson_build
 
 %install
