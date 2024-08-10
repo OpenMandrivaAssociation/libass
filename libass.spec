@@ -45,7 +45,8 @@ will use libass.
 
 %build
 %meson \
-        -Ddirectwrite=disabled
+        -Ddirectwrite=disabled \
+        -Dcoretext=disabled
 %meson_build
 
 %install
