@@ -10,6 +10,8 @@ License:	GPLv2+
 Group:		System/Libraries
 Url:		https://github.com/libass/libass
 Source0:	https://github.com/libass/libass/archive/%{version}/%{name}-%{version}.tar.xz
+
+BuildRequires:  meson
 BuildRequires:	pkgconfig(enca)
 BuildRequires:	pkgconfig(fontconfig)
 BuildRequires:	pkgconfig(freetype2)
@@ -41,11 +43,11 @@ will use libass.
 %autosetup -p1
 
 %build
-%configure
-%make_build
+%meson
+%meson_build
 
 %install
-%make_install
+%meson_install
 
 %files -n %{libname}
 %{_libdir}/libass.so.%{major}*
