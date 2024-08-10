@@ -12,6 +12,7 @@ Url:		https://github.com/libass/libass
 Source0:	https://github.com/libass/libass/archive/%{version}/%{name}-%{version}.tar.xz
 
 BuildRequires:  meson
+BuildRequires:  nasm
 BuildRequires:	pkgconfig(enca)
 BuildRequires:	pkgconfig(fontconfig)
 BuildRequires:	pkgconfig(freetype2)
