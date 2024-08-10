@@ -45,7 +45,8 @@ will use libass.
 %autosetup -p1
 
 %build
-%meson
+%meson \
+        -Ddirectwrite=OFF
 %meson_build
 
 %install
