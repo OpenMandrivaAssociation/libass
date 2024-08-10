@@ -16,6 +16,7 @@ BuildRequires:	pkgconfig(enca)
 BuildRequires:	pkgconfig(fontconfig)
 BuildRequires:	pkgconfig(freetype2)
 BuildRequires:	pkgconfig(fribidi)
+BuildRequires:  pkgconfig(libunibreak)
 
 %description
 Libass is a portable library for SSA/ASS subtitles rendering.
