@@ -58,7 +58,7 @@ will use libass.
 
 %files -n %{devname}
 %doc Changelog
-%{_libdir}/libass.so
+#{_libdir}/libass.so
 %{_includedir}/ass
 %{_libdir}/pkgconfig/%{name}.pc
 
