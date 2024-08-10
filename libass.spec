@@ -1,3 +1,5 @@
+%undefine _debugsource_packages
+
 %define major 9
 %define libname %mklibname ass %{major}
 %define devname %mklibname ass -d
