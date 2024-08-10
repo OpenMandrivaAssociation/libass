@@ -57,11 +57,10 @@ will use libass.
 %meson_install
 
 %files -n %{libname}
-#{_libdir}/libass.so.%{major}*
+%{_libdir}/libass.so.%{major}*
 
 %files -n %{devname}
 %doc Changelog
-#{_libdir}/libass.so
+%{_libdir}/libass.so
 %{_includedir}/ass
 %{_libdir}/pkgconfig/%{name}.pc
-
