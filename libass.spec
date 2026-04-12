@@ -1,4 +1,5 @@
 %undefine _debugsource_packages
+%define _disable_ld_no_undefined 1
 
 %define major 9
 %define libname %mklibname ass %{major}
@@ -47,8 +48,8 @@ will use libass.
 %autosetup -p1
 
 %build
-export CC=gcc
-export CXX=g++
+#export CC=gcc
+#export CXX=g++
 %meson \
         -Ddirectwrite=disabled \
         -Dcoretext=disabled \
