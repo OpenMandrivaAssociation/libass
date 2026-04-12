@@ -12,6 +12,7 @@ License:	GPLv2+
 Group:		System/Libraries
 Url:		https://github.com/libass/libass
 Source0:	https://github.com/libass/libass/archive/%{version}/%{name}-%{version}.tar.xz
+Patch0:         https://patch-diff.githubusercontent.com/raw/libass/libass/pull/897.patch
 
 BuildRequires:  meson
 BuildRequires:  nasm
