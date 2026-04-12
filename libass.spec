@@ -1,5 +1,6 @@
 %undefine _debugsource_packages
 %define _disable_ld_no_undefined 1
+%define _disable_lto 1
 
 %define major 9
 %define libname %mklibname ass %{major}
