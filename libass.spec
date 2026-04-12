@@ -47,6 +47,8 @@ will use libass.
 %autosetup -p1
 
 %build
+export CC=gcc
+export CXX=g++
 %meson \
         -Ddirectwrite=disabled \
         -Dcoretext=disabled \
