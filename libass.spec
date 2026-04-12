@@ -50,7 +50,7 @@ will use libass.
 %meson \
         -Ddirectwrite=disabled \
         -Dcoretext=disabled \
-        -Dasm=enabled \
+        -Dasm=disabled \
         -Ddefault_library=shared
 %meson_build
 
